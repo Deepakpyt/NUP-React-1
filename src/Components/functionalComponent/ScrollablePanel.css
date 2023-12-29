@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+.image-container {
+    max-height: 80%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 80%;
+    border: 1px solid #ccc;
+}
+
+.image-container img {
+    max-width: 100%;
+    /* Set the maximum width to 100% of the container */
+    max-height: 100%;
+    /* Set the maximum height to 100% of the container */
+    object-fit: fill;
+    /* background-size: cover; */
+    width: 100%;
+    /* Maintain the aspect ratio */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Remove extra space below the image */
+    margin: auto;
+    /* Center the image */
+}
+
+.scrollable-panel {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 1%;
+    /* display: flex; */
+    overflow-x: scroll;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+    /*Prevent line breaks */
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    margin-right: 16px;
+    /* Adjust spacing between cards */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
